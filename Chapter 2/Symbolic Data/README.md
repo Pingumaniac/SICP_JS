@@ -1,4 +1,4 @@
-# Notes
+# Notes from the original book
 
 Descriptions about Huffman Encoding Trees are intersting.
 
