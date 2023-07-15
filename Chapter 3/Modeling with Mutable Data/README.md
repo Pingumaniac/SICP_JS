@@ -1,4 +1,4 @@
-# Notes
+# Notes from the original book
 
 Made notes of things that I have found interesting.
 
