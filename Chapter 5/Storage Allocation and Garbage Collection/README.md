@@ -1,4 +1,4 @@
-# Notes
+# Notes from the original book
 
 
 ## Two considerations in implementing list structure. (533-534)
