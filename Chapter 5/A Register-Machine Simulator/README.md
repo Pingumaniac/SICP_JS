@@ -1,4 +1,4 @@
-# Notes
+# Notes from the original book
 
 ## Descriptions of Simulator interface procedures (514)
 
