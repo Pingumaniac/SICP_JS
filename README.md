@@ -17,7 +17,7 @@ Note that this is my personal project for summer 2023 break.
 
 ## About each chapter
 
-* Chapter 1: Building Abstractions with Procedures
+* Chapter 1: Building Abstractions with Functions
 * Chapter 2: Building Abstractions with Data
 * Chapter 3: Modularity, Objects, and States
 * Chapter 4: Metalinguistic Abstraction
