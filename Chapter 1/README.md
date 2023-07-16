@@ -1,5 +1,7 @@
 # About Chapter 1
-This file contains my solutions to all of the exercises from Chapter 1.
+This file contains my solutions to all of the exercises from Chapter 1. 
+
+Notice that while the original book uses the terminology "procedure(s)," the SICP JS edition uses the terminology "functions."
 
 ## Contents in Chapter 1
 * 1.1 The Elements of Programming
