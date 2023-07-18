@@ -8,7 +8,7 @@ const tail = (items) => { return items === null ? null : items.right; }
 const list = (...items) => { return items.length === 0 ? null : new Pair(items[0], list(...items.slice(1))); }
 const append = (list1, list2) => { return list1 === null ? list2 : new Pair(head(list1), append(tail(list1), list2)); }
 const reverse = (items) => { return items === null ? null : append(reverse(tail(items)), list(head(items))); }
-const printList = (list) => { return list === null ? '' : head(list) + ' ' + printList(tail(list)); }
+const print_list = (list) => { return list === null ? '' : head(list) + ' ' + print_list(tail(list)); }
 
 const us_coins = list(50, 25, 10, 5, 1);
 const uk_coins = list(100, 50, 20, 10, 5, 2, 1);
