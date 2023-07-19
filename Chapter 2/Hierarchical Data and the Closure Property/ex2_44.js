@@ -9,6 +9,17 @@ const make_mobile = (left, right) => { return pair(left, right); }
 const make_branch = (length, structure) => { return pair(length, structure); }
 const left_branch = (mobile) => { return head(mobile); }
 const right_branch = (mobile) => { return tail(mobile); }
+const branch_length = (branch) => { return head(branch); }
+const branch_structure =(branch) => { return tail(branch); }
+const total_weight = (mobile) => { return branch_weight(left_branch(mobile)) + branch_weight(right_branch(mobile));}
+const branch_weight = (branch) => { return is_mobile(branch) ? total_weight(branch) : branch_length(branch); }
+const is_mobile = (structure) => { return !(head(structure) instanceof Pair) && !(tail(structure) instanceof Pair); }
+const is_balanced = (mobile) => { return branch_torque(left_branch(mobile)) === branch_torque(right_branch(mobile)); }
+const branch_torque = (branch) => { return branch_length(branch) * branch_weight(branch); }
+// const reverse = (items) => { return items === null ? null : append(reverse(tail(items)), list(head(items))); }
+// const count_leaves = (x) => { return x === null ? 0 : (x instanceof Pair ? count_leaves(head(x)) + count_leaves(tail(x)) : 1); }
+// const map = (f, items) => { return items === null ? null : new Pair(f(head(items)), map(f, tail(items))); }
+// const append = (list1, list2) => { return list1 === null ? list2 : new Pair(head(list1), append(tail(list1), list2)); }
 const map = (f, sequence) => { return accumulate((x, y) => pair(f(x), y), null, sequence); }
 const append = (seq1, seq2) => { return accumulate(pair, seq2, seq1); }
 const length = (sequence) => { return accumulate((x, y) => y + 1, 0, sequence); }
@@ -107,6 +118,12 @@ const permutations = (s) => {
 }
 const remove = (item, sequence) => {
     return sequence === null ? null : item === head(sequence) ? tail(sequence) : pair(head(sequence), remove(item, tail(sequence)));
+}
+const unique_pairs = (n) => {
+    return flat_map(i => map(j => pair(i, j), enumerate_interval(1, i - 1)), enumerate_interval(1, n));
+}
+const unique_triples = (n) => {
+    return flat_map(i => flat_map(j => map(k => list(i, j, k), enumerate_interval(1, j - 1)), enumerate_interval(1, i - 1)), enumerate_interval(1, n));
 }
 
 function flipped_pairs(painter) {
