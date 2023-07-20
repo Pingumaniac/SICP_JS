@@ -168,7 +168,7 @@ const encode_symbol = (char, tree) => {
 }
 
 const generate_huffman_tree = (pairs) => { return successive_merge(make_leaf_set(pairs)); }
-// exercise 2.69
+// exercise 2.70
 const successive_merge = (pairs) => {
     if (length(pairs) === 1) {
         return head(pairs);
