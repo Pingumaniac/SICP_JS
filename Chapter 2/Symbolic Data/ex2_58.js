@@ -160,6 +160,7 @@ const make_cosine = (x) => { return list("cos", x); }
 const make_quotient = (n, d) => { return list("/", n, d); }
 const is_parenthesis = (x) => { return is_pair(x) && head(x) === "parenthesis"; }
 const make_parenthesis = (x) => { return list("parenthesis", x); }
+const omit_parentheses = (x) => { return is_parenthesis(x) ? head(tail(x)) : x; }
 
 function deriv(exp, variable) {
     return is_number(exp) ? 0 : is_variable(exp) ? is_same_variable(exp, variable) ? 1 : 0 :
