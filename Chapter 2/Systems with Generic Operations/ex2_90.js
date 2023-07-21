@@ -175,7 +175,7 @@ const install_dense_poly_package = () => {
 }
 
 const install_sparse_poly_package = () => {
-    const make_spare_poly = (variable, term) => attach_tag("sparse_poly", pair(variable, term));
+    const make_sparse_poly = (variable, term) => attach_tag("sparse_poly", pair(variable, term));
     const variable = p => head(p);
     const term = p => tail(p);
     const is_equal_to_zero = x => x === 0;
@@ -183,6 +183,6 @@ const install_sparse_poly_package = () => {
     put("add", "sparse_poly", add_sparse_poly);
     put("sub", "sparse_poly", sub_sparse_poly);
     put("mul", "sparse_poly", mul_sparse_poly);
-    put("make", "sparse_poly", (variable, terms) => tag(make_spare_poly(variable, terms)));
+    put("make", "sparse_poly", (variable, terms) => tag(make_sparse_poly(variable, terms)));
     put("is_equal_to_zero", "sparse_poly", is_equal_to_zero);
 }
