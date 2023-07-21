@@ -128,10 +128,17 @@ const div_terms = (L1, L2) => {
             const new_c = div(coeff(t1), coeff(t2));
             const new_o = sub(order(t1), order(t2));
             const rest_of_result = div_terms(rest_terms(L1), L2);
+            return list(adjoin_term(make_term(new_o, new_c), first_term(rest_of_result)), second_term(rest_of_result));
         }
     }
 }
 
 const div_poly = (p1, p2) => {
-    return is_same_variable(term(p1), term(p2)) ? make_poly(term(p1), div_terms(coefficients(p1), coefficients(p2))) : error(list(p1, p2), "Polys not in same var -- div_poly");
+    if (is_empty_termlist(coefficients(p2))) {
+        return error(list(p1, p2), "Divide by zero polynomial -- div_poly");
+    } else if (is_empty_termlist(coefficients(p1))) {
+        return list(make_zero_poly(variable(p1)), make_zero_poly(variable(p1)));
+    } else {
+        return div_terms(coefficients(p1), coefficients(p2));
+    }
 }
