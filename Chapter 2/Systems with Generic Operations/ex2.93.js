@@ -246,6 +246,7 @@ const install_rational_package = () => {
     put("make", "rational", make_rational);
 }
 
+// test
 // Install packages
 install_polynomial_package();
 install_rational_package();
@@ -263,3 +264,5 @@ const rf = make_rational(p2, p1);
 // Perform operations and print results
 console.log("Rational: ", print_list(rf));
 
+// Add rf to itself using add
+// apply_generic("add", [rf, rf]); not working
