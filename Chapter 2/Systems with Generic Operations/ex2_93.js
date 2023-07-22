@@ -263,4 +263,4 @@ const rf = make_rational(p2, p1);
 console.log("Rational: ", print_list(rf));
 
 // Add rf to itself using add
-// apply_generic("add", [rf, rf]); not working
+// apply_generic("add", list(rf, rf)); not working
