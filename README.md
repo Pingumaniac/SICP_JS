@@ -4,11 +4,12 @@ This repository contains my solutions to exercises from the book "Structure and 
 
 These include:
 1. implementing an interpreter in JavaScript for a subset of JavaScript dialect that uses normal-order evaluation instead of applicative-order evaluation for Section 4.2
-2. implementing an interpreter in JavaScript for non-deterministic computing for Section 4.3
-3. implementing an interpreter in JavaScript for logic-programming language for Section 4.4
-4. implementing a simple compiler in JavaScript that translates JavaScript programs into sequences of instructions that can be executed directly with the registers and operations of the evaluator register machine for Section 5.5
-5. developing a rudimentary implementation of JS in Rust by translating the explicit-control evaluator of Section 5.4 into Rust and providing appropriate storage-allocation routines and other runtime support to run this code.
-6. modification of the compiler so that it compiles JS functions into sequences of C instructions and compiled the metacircular evaluator of Section 4.1 to produce a JS interpreter written in Rust.
+2. includes implementing an interpreter in JS for a subset of JS that uses applicative-order evaluation for Section 4.1
+3. implementing an interpreter in JavaScript for non-deterministic computing for Section 4.3
+4. implementing an interpreter in JavaScript for logic-programming language for Section 4.4
+5. implementing a simple compiler in JavaScript that translates JavaScript programs into sequences of instructions that can be executed directly with the registers and operations of the evaluator register machine for Section 5.5
+6. developing a rudimentary implementation of JS in Rust by translating the explicit-control evaluator of Section 5.4 into Rust and providing appropriate storage-allocation routines and other runtime support to run this code.
+7. modification of the compiler so that it compiles JS functions into sequences of C instructions and compiled the metacircular evaluator of Section 4.1 to produce a JS interpreter written in Rust.
 
 Note that this is my personal project for summer 2023 break.
 
