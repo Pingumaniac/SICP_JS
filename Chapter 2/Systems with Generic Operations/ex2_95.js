@@ -271,12 +271,13 @@ const greatest_common_divisor = (p1, p2) => {
 const p1 = make_polynomial("x", list(make_term(2, 1), make_term(1, -2), make_term(0, 1)));
 const p2 = make_polynomial("x", list(make_term(2, 11), make_term(0, 7)));
 const p3 = make_polynomial("x", list(make_term(1, 13), make_term(0, 5)));
-const q1 = mul_poly(p1, p2);
-const q2 = mul_poly(p1, p3);
-
 console.log(print_list(p1));
 console.log(print_list(p2));
 console.log(print_list(p3));
-// console.log(print_list(q1)); not working
-// console.log(print_list(q2)); not working
-// console.log(print_list(greatest_common_divisor(q1, q2))); not working
+
+// these are not working
+// const q1 = mul_poly(p1, p2);
+// const q2 = mul_poly(p1, p3);
+// console.log(print_list(q1));
+// console.log(print_list(q2));
+// console.log(print_list(greatest_common_divisor(q1, q2)));
