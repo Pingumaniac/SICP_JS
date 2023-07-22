@@ -4,8 +4,6 @@ const head = (items) => {
         return null;
     } else if (typeof items === "object" && items.hasOwnProperty('left')) {
         return items.left;
-    } else if (Array.isArray(items)) {
-        return items.length > 0 ? items[0] : null;
     } else {
         throw new Error(`Cannot call 'head' on non-pair: ${items}`);
     }
