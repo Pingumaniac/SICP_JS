@@ -8,8 +8,6 @@ function set_head(pair, value) { pair[0] = value; }
 function set_tail(pair, value) { pair[1] = value; }
 function head(pair) { return pair[0]; }
 function tail(pair) { return pair[1]; }
-function set_head(pair, value) { pair[0] = value; }
-function set_tail(pair, value) { pair[1] = value; }
 
 const x = list("a", "b");
 const y = list("c", "d");
