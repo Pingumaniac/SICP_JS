@@ -70,5 +70,5 @@ function ripple_carry_adder(a, b, sum, carry) {
     full_adder(a[3], b[3], carry_3, sum[3], carry);
     return "ok";
 }
-// delay time of ripple_carry_adder in terms of and_gate_dela, or_gate_delay, inverter_delay
+// delay time of ripple_carry_adder in terms of and_gate_delay, or_gate_delay, inverter_delay
 // = 12 * and_gate_delay + 8 * or_gate_delay + 12 * inverter_delay
