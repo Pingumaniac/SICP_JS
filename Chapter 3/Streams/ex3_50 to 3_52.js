@@ -39,11 +39,9 @@ function stream_map_optimized(f, s) {
 
 // ex 3.50
 function stream_map_2(f, s1, s2) {
-    if (s1 === null || s2 === null) {
-        return null;
-    } else {
-        return [f(s1[0], s2[0]), () => stream_map_2(f, stream_tail(s1), stream_tail(s2))];
-    }
+    if (s1 === null || s2 === null) { return null; }
+    if (s1 === undefined || s2 === undefined) { throw new Error('Undefined stream(s) have been provided.'); }
+    return [f(s1[0], s2[0]), () => stream_map_2(f, stream_tail(s1), stream_tail(s2))];
 }
 
 function stream_map_2_optimized(f, s1, s2) {
