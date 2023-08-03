@@ -1,6 +1,6 @@
 # SICP_JS 
 
-This repository contains my solutions to exercises from the book "Structure and Interpretation of Computer Programs: JavaScript Edition." Notice that I have made notes from the original book "Structure and Interpretation of Computer Programs" but have decided to solve problems in JavaScript instead of Scheme.
+This repository contains my solutions to exercises from the book "Structure and Interpretation of Computer Programs: JavaScript Edition." Notice that I have made notes from the original book "Structure and Interpretation of Computer Programs" but have decided to solve problems in NodeJS instead of Scheme.
 
 These include:
 1. implementing an interpreter in NodeJS for a subset of JavaScript dialect that uses normal-order evaluation instead of applicative-order evaluation for Section 4.2
