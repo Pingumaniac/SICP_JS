@@ -3,8 +3,8 @@
 This repository contains my solutions to exercises from the book "Structure and Interpretation of Computer Programs: JavaScript Edition." Notice that I have made notes from the original book "Structure and Interpretation of Computer Programs" but have decided to solve problems in NodeJS instead of Scheme.
 
 These include:
-1. implementing an interpreter in NodeJS for a subset of JavaScript dialect that uses normal-order evaluation instead of applicative-order evaluation for Section 4.2
-2. includes implementing an interpreter in NodeJS for a subset of JS that uses applicative-order evaluation for Section 4.1
+1. implementing an interpreter in NodeJS for a subset of JS that uses applicative-order evaluation for Section 4.1
+2. implementing an interpreter in NodeJS for a subset of JavaScript dialect that uses normal-order evaluation instead of applicative-order evaluation for Section 4.2
 3. implementing an interpreter in NodeJS for non-deterministic computing for Section 4.3
 4. implementing an interpreter in NodeJS for logic-programming language for Section 4.4
 5. implementing a simple compiler in NodeJS that translates JavaScript programs into sequences of instructions that can be executed directly with the registers and operations of the evaluator register machine for Section 5.5
