@@ -15,8 +15,6 @@ These include:
 10. developing a rudimentary implementation of JS in Rust by translating the explicit-control evaluator of Section 5.4 into Rust and providing appropriate storage-allocation routines and other runtime support to run this code.
 11. modification of the compiler so that it compiles JS functions into sequences of C instructions and compiled the metacircular evaluator of Section 4.1 to produce a JS interpreter written in Rust.
 
-Note that this is my personal project for summer 2023 break.
-
 ## Who am I?
 #### Young-jae Moon
 * M.Sc. in computer science and Engineering Graduate Fellowship recipient at Vanderbilt University (January 2023 - December 2024).
