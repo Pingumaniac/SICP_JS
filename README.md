@@ -4,8 +4,8 @@ This repository contains my solutions to exercises from the book "Structure and 
 
 Notable projects includes:
 1. implementing a simple compiler in NodeJS that translates JavaScript programs into sequences of instructions that can be executed directly with the registers and operations of the evaluator register machine for Section 5.5
-2. developing a rudimentary implementation of JS in Rust by translating the explicit-control evaluator of Section 5.4 into Rust and providing appropriate storage-allocation routines and other runtime support to run this code.
-3. Includes modification of the compiler so that it compiles JS functions into sequences of C instructions and compiled the metacircular interpreter of Section 4.1 with implementing a parser in Rust to produce a JS interpreter written in Rust.
+2. developing a rudimentary implementation of JS in Java by translating the explicit-control evaluator of Section 5.4 into Java and providing appropriate storage-allocation routines and other runtime support to run this code.
+3. Includes modification of the compiler so that it compiles JS functions into sequences of Java instructions and compiled the metacircular interpreter of Section 4.1 to produce a JS interpreter written in Java.
 
 ## Who am I?
 #### Young-jae Moon
