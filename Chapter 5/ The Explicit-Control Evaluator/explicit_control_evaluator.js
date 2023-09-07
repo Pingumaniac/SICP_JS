@@ -50,14 +50,12 @@ controller(
     "ev_literal",
         assign("val", [op("literal_value"), reg("comp")]),
         go_to(reg("continue")),
-    // ex 5.31 Part (a)
     "ev_name",
         assign("val", [op("symbol_of_name"), reg("comp"), reg("env")]),
         assign("val", [op("lookup_symbol_value"), reg("val"), reg("env")]),
         test([op("is_error_code"), reg("val")]),
         branch(label("signal_error")),
         go_to(reg("continue")),
-    // end of ex 5.31 Part (a)
     "ev_lambda",
         assign("unev", [op("lambda_parameter_symobls"), reg("comp")]),
         assign("comp", [op("lambda_body"), reg("comp")]),
@@ -154,7 +152,6 @@ controller(
         test([op("is_compound_function"), reg("fun")]),
         branch(label("compound_apply")),
         go_to(label("unknown_function_type")),
-    // ex 5.31 Part (b)
     "primitive_apply",
         assign("val", [op("apply_primitive_function"), reg("fun"), reg("argl")]),
         test([op("is_error_code"), reg("val")]),
@@ -164,7 +161,6 @@ controller(
     "signal_error",
         perform([op("report_error"), reg("val")]),
         go_to(label("read_evaluate_print_loop")),
-    // end of ex 5.31 Part (b)
     "compound_apply",
         assign("unev", [op("function_parameters"), reg("fun")]),
         assign("env", [op("function_environment"), reg("fun")]),
