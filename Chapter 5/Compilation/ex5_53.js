@@ -1,0 +1,5 @@
+/*
+Compiling metacircular evaluator takes a lot of time for execution.
+
+Using the back quotes is a good idea.
+*/
